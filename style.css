@@ -1,68 +1,80 @@
-* {
-  margin: 0px;
-  padding: 0px;
+.nav{
+font-family: sans-serif;
+position: fixed;
+border-bottom: 5px solid black;
+width: 99%;
 }
-body {
-  font-size: 120%;
-  background: #F8F8FF;
+.profielfoto{
+  width: 3%;
+  height: auto;
+  margin-left: 105%;
+  margin-top: -7%;
+  border: 1px solid black;
 }
-
-.header {
-  width: 30%;
-  margin: 50px auto 0px;
-  color: white;
-  background: #5F9EA0;
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
-  padding: 20px;
+.tit{
+  font-size: 2.8em;
+  margin-left: 42%;
 }
-form, .content {
-  width: 30%;
-  margin: 0px auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0px 0px 10px 10px;
+.cati{
+  font-size: 2em;
+  margin-left: 80%;
+  display: inline;
 }
-.input-group {
-  margin: 10px 0px 10px 0px;
+.prof{
+font-size: 1.5em;
+font-family: sans-serif;
+margin-top: -2.5%;
+text-align: center;
+margin-left: -82%;
 }
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 3px;
-}
-.input-group input {
-  height: 30px;
-  width: 93%;
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
-.btn {
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  background: #5F9EA0;
+.dropdown{
+  float: right;
+  margin-top: 0.5%;
+  font-size: 2em;
   border: none;
-  border-radius: 5px;
 }
-.error {
-  width: 92%;
-  margin: 0px auto;
-  padding: 10px;
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
-  border-radius: 5px;
-  text-align: left;
+a {
+  text-decoration: none;
 }
-.success {
-  color: #3c763d;
-  background: #dff0d8;
-  border: 1px solid #3c763d;
-  margin-bottom: 20px;
+@media screen and (max-width: 600px){
+
+  .nav{
+  font-family: sans-serif;
+  position: fixed;
+  border-bottom: 5px solid black;
+  width: 99%;
+background-color: black;
+  }
+  .profielfoto{
+    width: 3%;
+    height: auto;
+    margin-left: 105%;
+    margin-top: -7%;
+    border: 1px solid black;
+  }
+  .tit{
+    font-size: 23.8em;
+    margin-left: 42%;
+  }
+  .cati{
+    font-size: 2em;
+    margin-left: 80%;
+    display: inline;
+  }
+  .prof{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  margin-top: -3%;
+  text-align: center;
+  }
+  .dropdown{
+    float: right;
+    margin-top: 0%;
+    font-size: 2em;
+    border: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
 }

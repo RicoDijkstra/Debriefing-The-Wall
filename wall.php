@@ -12,11 +12,11 @@
         <h1 style="display:inline" class="tit"> The Wall </h1>
         <select class="dropdown" name="categorie">
   <option value="1">Categorie</option>
-  <option value="2">Auto</option>
-  <option value="3">Natuur</option>
-  <option value="4">Stad</option>
+  <option value="2">Cars</option>
+  <option value="3">Nature</option>
+  <option value="4">Town</option>
 </select>
-<a href="profiel.php" target="_blank"><p class="prof"> <strong>Profiel</strong> </p></a>
+<a href="profiel.php" target="_blank"><p class="prof"> <strong>Profile</strong> </p></a>
       </div>
 
   </body>

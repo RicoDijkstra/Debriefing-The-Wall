@@ -3,13 +3,13 @@
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
   <div class="header">
   	<h2>Register</h2>
   </div>
-	
+
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
