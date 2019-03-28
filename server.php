@@ -16,6 +16,16 @@ if (isset($_POST['reg_user'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
+  $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+  $password_1 = filter_var($_POST['password_1'], FILTER_SANITIZE_STRING);
+  $password_2 = filter_var($_POST['password_2'], FILTER_SANITIZE_STRING);
+  if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    // Geen geldig getal
+    $errors['email'] = 'your email doesnt exits ';
+}
+
+
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
