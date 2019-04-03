@@ -3,7 +3,7 @@
 <html>
 <head>
   <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
   <div class="header">
@@ -21,10 +21,10 @@
   		<input type="password" name="password">
   	</div>
   	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
+  		<a href="wall.php"><button type="submit" class="btn" name="login_user">Login</button></a>
   	</div>
   	<p>
-  		Not yet a member? <a href="register.php" class="link">Sign up</a>
+  		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
 </body>

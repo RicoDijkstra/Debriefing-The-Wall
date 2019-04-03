@@ -42,8 +42,8 @@
 
 .red {
     text-shadow:-1px -1px 0 #A84155;
-    background: #ffa500;
-    border:1px solid #ffa500;
+    background: #FFF;
+    border:1px solid #FFF;
     text-decoration: none;
 
     background-image:-webkit-linear-gradient(top, #ffa500, #ffa500);

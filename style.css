@@ -1,8 +1,55 @@
+body{
+  background-color: #c4be71;
+}
 .nav{
 font-family: sans-serif;
 position: fixed;
 border-bottom: 5px solid black;
 width: 99%;
+display: block;
+margin-top: -2.2%;
+background-color: #c4be71;
+margin-left: -1.5%;
+}
+img{
+cursor: pointer;
+margin-bottom: 10%;
+}
+#name{
+  width: 300px;
+  float: right;
+  margin-top: 1.2%;
+  font-size: 1.5em;
+  border: none;
+  margin-right: 0%;
+}
+* {
+  box-sizing: border-box;
+}
+button{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  margin-top: -2.5%;
+  text-align: center;
+  margin-left: -45%;
+  border: none;
+}
+.row{
+  margin-left: 10%;
+  display: block;
+  margin-top: 10%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .profielfoto{
   width: 3%;
@@ -25,7 +72,10 @@ font-size: 1.5em;
 font-family: sans-serif;
 margin-top: -2.5%;
 text-align: center;
-margin-left: -82%;
+margin-left: -73%;
+}
+img:hover{
+   box-shadow: 10px 10px 5px grey;
 }
 .dropdown{
   float: right;
@@ -36,45 +86,49 @@ margin-left: -82%;
 a {
   text-decoration: none;
 }
-@media screen and (max-width: 600px){
+.grid-container {
+    display: grid;
+    margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
 
-  .nav{
-  font-family: sans-serif;
-  position: fixed;
-  border-bottom: 5px solid black;
-  width: 99%;
-background-color: black;
-  }
-  .profielfoto{
-    width: 3%;
-    height: auto;
-    margin-left: 105%;
-    margin-top: -7%;
-    border: 1px solid black;
-  }
-  .tit{
-    font-size: 23.8em;
-    margin-left: 42%;
-  }
-  .cati{
-    font-size: 2em;
-    margin-left: 80%;
-    display: inline;
-  }
-  .prof{
-  font-size: 1.5em;
-  font-family: sans-serif;
-  margin-top: -3%;
-  text-align: center;
-  }
-  .dropdown{
-    float: right;
-    margin-top: 0%;
-    font-size: 2em;
-    border: none;
-  }
-  a {
-    text-decoration: none;
-  }
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 
+.grid-container--fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+body {
+  padding: 2em;
+}
+
+hr {
+  margin: 80px;
+}
+@media screen and (max-width: 667px) {
+.nav{
+  margin-top: -11%;
+}
+.upload{
+  margin-left: -85%;
+  margin-top: -8%;
+}
+.tit{
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.prof{
+margin-top: 5%;
+margin-left: -90%;
+}
+.zoek{
+  margin-left: -5%;
+  margin-top: 10%;
+}
 }
