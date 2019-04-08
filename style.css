@@ -7,7 +7,7 @@ position: fixed;
 border-bottom: 5px solid black;
 width: 99%;
 display: block;
-margin-top: -2.2%;
+margin-top: -2.9%;
 background-color: #c4be71;
 margin-left: -1.5%;
 }
@@ -31,8 +31,9 @@ button{
   font-family: sans-serif;
   margin-top: -2.5%;
   text-align: center;
-  margin-left: -45%;
   border: none;
+  margin-left: 20%;
+  z-index: 99999;
 }
 .row{
   margin-left: 10%;
@@ -58,9 +59,51 @@ button{
   margin-top: -7%;
   border: 1px solid black;
 }
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 .tit{
   font-size: 2.8em;
   margin-left: 42%;
+  margin-top: 10%;
 }
 .cati{
   font-size: 2em;
@@ -116,8 +159,8 @@ hr {
   margin-top: -11%;
 }
 .upload{
-  margin-left: -85%;
-  margin-top: -8%;
+  margin-left: -70%;
+  margin-top: -10%;
 }
 .tit{
   margin-left: 30%;

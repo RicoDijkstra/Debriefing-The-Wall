@@ -1,4 +1,5 @@
 <?php
+include ('settings.php');
 $sql = "SELECT * FROM images";
 foreach ($database->query($sql) as $image_results) {
     $imageID = $image_results['id'];
@@ -34,9 +35,9 @@ foreach ($database->query($sql) as $image_results) {
             </div>
 
             <div class="modalItemLeft">
-                <p class="modalItemDesc"> <?php echo $image_results['image_description'];?></p>
+                <p class="modalItemDesc"> <?php echo $image_results['description'];?></p>
                 <h3 class="modalItemOwner">Uploaded by:<br><?php /*echo $username;*/?></h3>
-                <h6 class="modalItemDate"><?php echo $image_results['image_date'];?></h6>
+                <h6 class="modalItemDate"><?php echo $image_results['date'];?></h6>
                 <!--               Need to finish search functionality for following for loop to be completed.-->
                 <div class="modalItemTags"> <?php /*for($i=0;$i<sizeof($tagArray);$i++){*/ ?>
                     <a class="modalItemTags" href="index.php/search">
