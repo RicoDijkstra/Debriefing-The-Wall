@@ -8,6 +8,6 @@
   <body>
 <img src="images/profiel.png" alt="profiel">
 
-<a href="login.php"><button class="push_button red" href="#">Logout</button></a>
+<a href="login.php" class="myButton">Logout</a>
   </body>
 </html>

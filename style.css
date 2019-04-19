@@ -1,5 +1,5 @@
 body{
-  background-color: #c4be71;
+  background-color: #006600;
 }
 .nav{
 font-family: sans-serif;
@@ -7,13 +7,18 @@ position: fixed;
 border-bottom: 5px solid black;
 width: 99%;
 display: block;
-margin-top: -2.9%;
-background-color: #c4be71;
+margin-top: -2.7%;
+background-color: #006600;
 margin-left: -1.5%;
 }
 img{
 cursor: pointer;
 margin-bottom: 10%;
+
+}
+.modaalKnop:hover{
+  box-shadow: 0px 0px 50px 21px black;
+  transition: box-shadow 0.3s ease-in-out;
 }
 #name{
   width: 300px;
@@ -23,8 +28,58 @@ margin-bottom: 10%;
   border: none;
   margin-right: 0%;
 }
+#name1{
+  width: 300px;
+  float: center;
+  margin-top: 1.2%;
+  font-size: 1.5em;
+  margin-left: 0%;
+}
 * {
   box-sizing: border-box;
+}
+.upload{
+
+}
+.button-2{
+  display: inline;
+  width:140px;
+  height:50px;
+  border:2px solid black;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+}
+.button-2 a{
+  font-family:arial;
+  font-size:16px;
+  color:black;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-50px;
+  background:black;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  top:0;
+}
+.button-2:hover a{
+  color:#fff;
 }
 button{
   font-size: 1.5em;
@@ -59,10 +114,32 @@ button{
   margin-top: -7%;
   border: 1px solid black;
 }
+.titzoek{
+  margin-left: -55%;
+}
+.profimg{
+  width: 85%;
+  height: auto;
+  margin-left: 8%;
+}
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    position: fixed;
+    margin-left: 90%;
+    margin-top: 40%;
+}
 
+.type1 {
+    width: 100px;
+    height: 100px;
+    background: #8d9096;
+    border: 3px solid #8d9096;
+}
 
+input{
 
-
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -74,14 +151,14 @@ button{
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 100px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
@@ -92,6 +169,7 @@ button{
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -102,8 +180,12 @@ button{
 }
 .tit{
   font-size: 2.8em;
-  margin-left: 42%;
+  margin-left: 22%;
   margin-top: 10%;
+  color: black;
+}
+.tit:hover{
+  color: white;
 }
 .cati{
   font-size: 2em;
@@ -117,8 +199,8 @@ margin-top: -2.5%;
 text-align: center;
 margin-left: -73%;
 }
-img:hover{
-   box-shadow: 10px 10px 5px grey;
+#imging:hover{
+
 }
 .dropdown{
   float: right;
@@ -132,21 +214,17 @@ a {
 .grid-container {
     display: grid;
     margin-top: 5%;
+    width: 80%;
   margin-left: auto;
   margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-template-rows: auto;
   justify-items: center;
 }
 
-.grid-container--fill {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+#name.zoek{
+  margin-right: 15%;
 }
-
-.grid-container--fit {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-
-
 body {
   padding: 2em;
 }
@@ -154,12 +232,51 @@ body {
 hr {
   margin: 80px;
 }
+.modaalKnop{
+  color: white;
+}
+.modaal_achtergrond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.titmod{
+  font-family: sans-serif;
+  color: white
+}
+.modaalView {
+  max-height: 50%;
+  max-width: 100%;
+  padding: 7em;
+  border-radius: 2em;
+  align-self: center;
+}
+.modaalTrigger {
+  animation-name: modaalKey;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+.sluitKnop{
+  margin-left: -30%;
+  margin-bottom: -300%;
+}
 @media screen and (max-width: 667px) {
 .nav{
   margin-top: -11%;
+  margin-left: -9%;
 }
 .upload{
-  margin-left: -70%;
+  margin-left: 60%;
   margin-top: -10%;
 }
 .tit{
@@ -171,7 +288,52 @@ margin-top: 5%;
 margin-left: -90%;
 }
 .zoek{
-  margin-left: -5%;
-  margin-top: 10%;
+margin-left: 1%;
+}
+.button-2{
+  display: inline;
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 32%;
+}
+.button-2 a{
+  font-family:arial;
+  font-size:16px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-50px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  top:0;
+}
+.button-2:hover a{
+  color:#fff;
+}
+hr{
+  width: 4544446px;
+}
+.circleBase{
+  margin-top: 40%;
 }
 }

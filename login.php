@@ -20,9 +20,9 @@
   		<label>Password</label>
   		<input type="password" name="password">
   	</div>
-  	<div class="input-group">
-  		<a href="wall.php"><button type="submit" class="btn" name="login_user">Login</button></a>
-  	</div>
+    <div class="input-group">
+      		<a href="wall.php"><button type="submit" class="btn" name="login_user">Login</button></a>
+      	</div>
   	<p>
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
